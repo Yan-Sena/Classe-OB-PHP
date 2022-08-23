@@ -1,0 +1,63 @@
+*{
+box-sizing: 0;
+}
+
+body{
+
+    background-color: aqua;
+
+}
+
+#Container {
+    padding: 2%;
+    text-align: left;
+    background-color: lightblue;
+    border: 3px solid black;
+    width: 100%;
+    height: 2000px;
+    
+}
+
+button{
+
+    border: 2px solid black;
+    padding: 10px;
+    margin-left: 1.5%;
+
+}
+
+.formulario{
+
+    margin: 1.5%;
+    padding: 1%;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    /*background-image: url(imagens/backgroundtable.jpg);*/
+
+}
+
+.imagecenter{
+    margin-left: 2%;
+
+}
+
+.Inline{
+
+    display: inline;
+    
+
+}
+#img-up{
+
+    margin-top: -7px;
+
+}
+
+#img-minions{
+
+    border: 5px solid black;
+
+    
+
+
+}
