@@ -8,34 +8,26 @@
         var $titular;
         var $senha;
         var $saldo;
-        var $cancelada;
+
 
     
-        //duminui o soldo em quantia
-    function retirar($quantia)
-    { 
-        if ($quantia > 0) {
-            $this->saldo -= $quantia;
-        }
+        //metodo construtor inicializa propiedades
+   function __construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo){
+
+    $this->agencia = $agencia;
+    $this->codigo = $codigo;
+    $this->dataDeCriacao = $dataDeCriacao;
+    $this->titular = $titular;
+    $this->senha = $senha;
+
+    //chamada a outro método da classe
     }
-
-    function depositar($quantia){
-
-        if ($quantia > 0) {
-
-            $this->saldo += $quantia;
-
-        }
-
-
-    }
-        //aumenta a idade em anos
-
-    function obterSaldo(){
-
-        return $this->saldo;
-
-    }
+    
+    function __destruct()
+    {
+        echo "<br>Objeto Conta {$this->codigo} de {$this->this->nome} finalizada ...<br>";
+    } 
+   
 
 }
 
