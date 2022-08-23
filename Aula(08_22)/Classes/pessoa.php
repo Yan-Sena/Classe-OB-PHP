@@ -1,4 +1,5 @@
 <?php 
+$anos = 0;
 
     class Pessoa 
     {
