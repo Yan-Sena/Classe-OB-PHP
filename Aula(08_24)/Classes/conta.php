@@ -19,6 +19,7 @@
     $this->dataDeCriacao = $dataDeCriacao;
     $this->titular = $titular;
     $this->senha = $senha;
+    $this->saldo = $saldo;
 
     //chamada a outro método da classe
     }
