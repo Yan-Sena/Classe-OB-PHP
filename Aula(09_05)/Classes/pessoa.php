@@ -2,36 +2,37 @@
 
     class Pessoa
     {
-        var $nome;
-        var $endereco;
-        var $idade;
+        public $nome;
+        public $endereco;
+        public $idade;
 
 
     
-        //metodo construtor inicializa propiedades
+
    function __construct($nome,$endereco,$idade){
 
     $this->nome = $nome;
 	$this->endereco = $endereco;
 	$this->idade = $idade;
   
-    //chamada a outro método da classe
+
     }
+
+
   
 	function imprimeDados(){
 
-		echo "Nome: " . $this->nome;
-
+		echo "Nome: " . $this->nome . "<br>";
+		echo "Endereco: " . $this->endereco . "<br>";
+		echo "Idade: " . $this->idade . "<br>";
 
 	}	
-
-
-
-
-
    
+	function _destruct() {
 
-  
+        echo "<br>Objeto {$this->nome} finalizado... <br>"; 
+
+    }
 }
 
 ?>
