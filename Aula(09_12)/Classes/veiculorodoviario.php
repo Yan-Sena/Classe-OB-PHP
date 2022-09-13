@@ -82,13 +82,12 @@
 
        public function veiculorodoviario(){
 
-        
+        echo "Vruuuuuuuuuuuummmmmmmmmmmmmmmmmmm <br>";
+        echo "<img src='caminhao.gif'>";
+
 
 
        }
-
-
-
 
     
        function _destruct() {
