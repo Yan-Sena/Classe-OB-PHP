@@ -81,7 +81,45 @@
 
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
+    public function extrato_Conta(){
 
+        return $this->situacao;
+
+    }
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+    public function sacar_Valor($quantia){
+
+        if(is_numeric($quantia) &&($quantia > 0)){
+
+          $this->saldo = $this->saldo - $quantia;
+          return $quantia;
+            
+
+        }else{
+            return false;
+        }
+
+    }
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+    public function depositar_Valor($quantia){
+
+        if(is_numeric($quantia) &&($quantia > 0)){
+        $this->saldo = $this->saldo + $quantia;
+          
+        return $this->saldo;
+        
+        }else{
+
+            return false;
+
+        }
+    }
+
+    
 
 
 
