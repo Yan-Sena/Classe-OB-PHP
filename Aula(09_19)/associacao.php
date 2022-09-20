@@ -11,7 +11,7 @@ $fornecedor->RazaoSocial= ' Bom Gosto Alimentos S.A.';
 $fornecedor->Endereco = ' Rua Ipi ranga';
 $fornecedor->Cidade = 'Poços de Caldas';
 
-$Produto = new Produto();   
+$Produto = new Produto();
 
 //instancia Produto $produto= new Produto();
 $produto->Codigo = 462;
